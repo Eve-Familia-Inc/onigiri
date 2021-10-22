@@ -45,7 +45,7 @@
       for (let i = 0; i < 5; i++) {
         let col = [];
         for (let j = 0; j < 3; j++) {
-          const value = random.nextInt(0, 255);
+          const value = random.nextInt(120, 255);
           col.push(value);
         }
         this.colors.push(rgb2hex(col));
