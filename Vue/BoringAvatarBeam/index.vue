@@ -108,5 +108,10 @@
     mounted() {
       new BoringAvatarBeam(this.size, this.name, this.square).generateSVG("content");
     },
+    watch: {
+      name: function (newName, oldName) {
+        new BoringAvatarBeam(this.size, newName, this.square).generateSVG("content");
+      }
+    }
   }
 </script>
